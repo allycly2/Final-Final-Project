@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam");
+
+.navBar {
+  background-color: #c2a38f;
+  padding: 90px;
+  height: 100vh;
+  display: flex;
+}
+
+.nav {
+  display: flex;
+}

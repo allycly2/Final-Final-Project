@@ -1,0 +1,54 @@
+.wrapper {
+  padding: 1rem;
+  border-radius: 0.8rem;
+}
+
+.expense-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.expense-btn {
+  background-color: #ab8159;
+  border-radius: 0.4rem;
+  border: 1px solid #ab8159;
+  margin-top: 0.7rem;
+  font: inherit;
+  padding: 0.3rem;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+form button:hover,
+form button:active {
+  background-color: #6f4f31;
+  transition: 0.6s;
+  transform: translateY(-0.15em);
+}
+
+.expense-input-date {
+  border-radius: 0.4rem;
+  border: 1px solid #6f4f31;
+  padding: 0.3rem;
+  margin: 0.7rem 0;
+  color: #000000;
+}
+
+input:focus {
+  border-color: #6f4f31;
+  outline: none;
+}
+
+.radio-buttons label {
+  margin-left: 1rem;
+}
+
+.radio-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.expense-error-message {
+  padding-top: 20px;
+  color: #fc534e;
+}

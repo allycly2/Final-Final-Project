@@ -1,0 +1,79 @@
+.income,
+.expense {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1.1rem;
+  border-radius: 0.8rem;
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+}
+
+.income:hover {
+  background-color: #b7dd94;
+  transition: 0.6s;
+  transform: translateY(-0.15em);
+}
+.expense:hover {
+  background-color: #fcb2b0;
+  transition: 0.6s;
+  transform: translateY(-0.15em);
+}
+
+.income {
+  background-color: #cce6b3;
+  color: #5f4018;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.expense {
+  background-color: #ffd1cf;
+  color: #38240a;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.title {
+  flex: 1;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  white-space: nowrap;
+}
+
+.title::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.delete {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font: inherit;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(255, 91, 91);
+  padding: 0;
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 0.3rem;
+}
+
+.delete:hover {
+  background-color: rgb(255, 62, 62);
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

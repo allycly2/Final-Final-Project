@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Barlow+Condensed&family=Bebas+Neue&family=Comic+Neue&family=Josefin+Sans:wght@300;400&family=Kalam:wght@300&family=Mali:ital,wght@0,400;0,500;1,400&family=Marcellus&family=Roboto+Flex:opsz@8..144&family=Single+Day&display=swap");
+
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+.home-header {
+  background-color: #e2b17d;
+  display: flex;
+  width: 100%;
+  padding: 25px;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+  position: fixed;
+}
+
+.home-head1 {
+  display: flex;
+  align-items: center;
+}
+
+.home-img {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.home-btn {
+  background-color: #fff;
+  border-radius: 20px;
+  border: none;
+  font: inherit;
+  color: #6c3518;
+  cursor: pointer;
+  padding: 15px;
+  font-weight: 500;
+}
+
+.home-btn:hover {
+  background-color: #6f4f31;
+  color: #fff;
+}
+
+.home-bk {
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-1 {
+  font-size: 40px;
+}
+.home-h2 {
+  padding-bottom: 20px;
+  font-family: "Comic Neue";
+  color: #6a391b;
+  font-size: 60px;
+  line-height: 90px;
+}
+
+.home-section-one {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  background-color: #f9cf9f;
+  padding: 5% 12%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.home-section-two {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 2% 10%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  align-items: center;
+}
+
+.section-two-img {
+  height: 300px;
+}
+
+.section-three-img {
+  height: 200px;
+}
+
+.section-five-img {
+  height: 150px;
+}
+
+.home-section-three {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 3% 10%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  align-items: center;
+}
+
+.home-section-four {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 3% 10%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  align-items: center;
+}
+
+.home-section-five {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 3% 10%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  align-items: center;
+}
+
+.home-question {
+  display: flex;
+  text-align: center;
+  background-color: #fff;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 30px;
+  align-items: center;
+  height: 150px;
+  padding: 120px;
+  color: #6a391b;
+  letter-spacing: 0.15em;
+}
+
+.home-answer {
+  display: flex;
+  text-align: center;
+  background-color: #fff;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 30px;
+  align-items: center;
+  height: 120px;
+  padding: 120px;
+  color: #6a391b;
+  letter-spacing: 0.15em;
+}
+
+.footer {
+  display: flex;
+  text-align: center;
+  background-color: #e2b17d;
+  justify-content: center;
+  font-size: 15px;
+  align-items: center;
+  height: 50px;
+  color: #ffffff;
+}
+
+/*animation-main*/
+
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #df8453;
+  --color-2: #72a75e;
+  --color-3: #e4a9a8;
+}
+
+.title-word-2 {
+  --color-1: #dbad4a;
+  --color-2: #c76473;
+  --color-3: #b77636;
+}
+
+.title-word-3 {
+  --color-1: #3db279;
+  --color-2: #e4a9a8;
+  --color-3: #859ca2;
+}
+
+.title-word-4 {
+  --color-1: #646e95;
+  --color-2: #df8453;
+  --color-3: #e4a9a8;
+}
+
+@keyframes color-animation {
+  0% {
+    color: var(--color-1);
+  }
+  32% {
+    color: var(--color-1);
+  }
+  33% {
+    color: var(--color-2);
+  }
+  65% {
+    color: var(--color-2);
+  }
+  66% {
+    color: var(--color-3);
+  }
+  99% {
+    color: var(--color-3);
+  }
+  100% {
+    color: var(--color-1);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section-two-img,
+  .section-three-img,
+  .section-four-img,
+  .section-five-img {
+    height: 100px;
+  }
+
+  .home-section-two,
+  .home-section-three,
+  .home-section-four {
+    padding: 10% 5%;
+  }
+}

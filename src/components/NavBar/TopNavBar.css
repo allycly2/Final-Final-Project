@@ -1,0 +1,32 @@
+.main-nav {
+  list-style-type: none;
+  padding: 30px 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 40px;
+}
+
+.main-nav li {
+  margin-right: 10px;
+}
+
+.nav-a {
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  font-size: 18px;
+}
+
+.nav-b {
+  text-decoration: none;
+  color: #452107;
+  position: relative;
+  font-size: 18px;
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}

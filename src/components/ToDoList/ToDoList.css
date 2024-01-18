@@ -1,0 +1,188 @@
+/* .app {
+  margin: 0 auto;
+} */
+
+@import url("https://fonts.googleapis.com/css?family=Schoolbell&v1");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Barlow+Condensed&family=Bebas+Neue&family=Comic+Neue&family=Josefin+Sans:wght@300;400&family=Kalam:wght@300&family=Mali:ital,wght@0,400;0,500;1,400&family=Marcellus&family=Roboto+Flex:opsz@8..144&family=Single+Day&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@1&family=League+Spartan:wght@400;500;700&family=Lemon&display=swap");
+
+.container {
+  background-image: url("./todo-back-row.jpg");
+  background-size: contain;
+  background-repeat: round;
+  display: flex;
+}
+
+.todolist {
+  margin: 4rem 3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  /*   border: 3px solid #4a3407; */
+  padding: 9rem 2rem;
+  gap: 2rem;
+  height: 80vh;
+  width: 40vh;
+  text-align: center;
+  font-family: "Lemon", serif;
+  color: #422800;
+  background-image: url(./todo.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+}
+
+.todotext {
+  font-size: 1.5rem;
+}
+
+.taskinput {
+  text-align: center;
+  width: 8rem;
+  background-color: #f1e9d9;
+  border-radius: 1rem;
+}
+
+.todochecklist {
+  padding: 2.5rem;
+  margin: 1rem;
+  height: 30vh;
+  width: 30vh;
+  text-overflow: clip;
+  font-family: "Schoolbell", arial, serif;
+  /* border: 0.1rem dashed black; */
+  background-image: url(./memo.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.tasks {
+  word-wrap: break-word;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.ToDoButton {
+  border: 0.1rem solid #4a3407;
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 18px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  font-family: "Lemon", serif;
+}
+
+.ToDoButton:hover {
+  background-color: #fff;
+}
+
+.ToDoButton:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+.tasknum {
+  margin: 0% 20%;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    display: flex;
+    background-size: contain;
+    background-repeat: inherit;
+    width: 100%;
+  }
+
+  .todolist {
+    position: absolute;
+    width: calc(100%-40px);
+    background-size: contain;
+    background-position: center;
+  }
+
+  .todotext,
+  .ToDoButton,
+  .tasknum {
+    position: relative;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+}
+
+@media only screen and (max-width: 700px) and (min-width: 0px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    background-size: contain;
+    background-repeat: inherit;
+    width: 100%;
+  }
+  .todolist {
+    margin: 0 auto;
+    margin-top: -35rem;
+    position: relative;
+    height: 50%;
+    width: 80%;
+    background-size: contain;
+    background-position: center;
+  }
+  hr {
+    margin: 0 auto;
+    width: 30%;
+  }
+  .wrapper {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+}

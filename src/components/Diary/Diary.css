@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Barlow+Condensed&family=Bebas+Neue&family=Comic+Neue&family=Josefin+Sans:wght@300;400&family=Kalam:wght@300&family=Mali:ital,wght@0,400;0,500;1,400&family=Marcellus&family=Roboto+Flex:opsz@8..144&family=Single+Day&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam");
+
+.diary-container {
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  min-height: 100vh;
+}
+
+.diary-content-container {
+  display: flex;
+  flex-direction: column;
+  margin: 4% 5%;
+  width: 100%;
+}
+
+.diary-h1 {
+  color: #6a391b;
+  font-family: "Comic Neue";
+}
+
+.diary-text {
+  width: 100%;
+}
+
+.diary-h4 {
+  font-weight: 400;
+  padding-bottom: 30px;
+  padding-top: 40px;
+}
+
+/*holiday imgr*/
+.diary-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.diary-img1 {
+  height: 150px;
+}
+
+/*new*/
+
+.grid-container {
+  display: flex;
+  column-gap: 40px;
+  height: 100%;
+}
+
+.diary-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 80%;
+  background: #ffffffad;
+  text-align: center;
+  border-radius: 10px;
+  padding: 40px 20px;
+}
+
+.complete {
+  text-decoration: line-through;
+}
+
+.diary-form {
+  margin-bottom: 32px;
+  display: flex;
+  font-family: "Kalam", cursive;
+  padding: 0 20px;
+}
+
+.diary-input {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 1px solid #ae7352;
+  height: 50px;
+  outline: none;
+  width: 300px;
+  font-family: "Kalam", cursive;
+  font-size: 16px;
+}
+
+.diary-textarea {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px;
+  border: 1px solid #ae7352;
+  width: 94%;
+  height: 450px;
+  font-family: "Kalam", cursive;
+  font-size: 16px;
+}
+
+.diary-textarea:focus {
+  border-color: #ae7354;
+}
+
+.diary-button {
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  width: 150px;
+  border: 0;
+  padding: 20px 0;
+  margin-top: 20px;
+  margin-left: -5px;
+  border-radius: 5px;
+  background-color: #ae7352;
+  box-shadow: #f2d9bf 0px 4px 0 0;
+  transition: 300ms;
+}
+
+.diary-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.diary-row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  margin: 4px auto;
+  padding: 16px;
+  width: 100%;
+  background: #ffdac5;
+  color: #6b412b;
+  font-family: "Kalam", cursive;
+  cursor: pointer;
+  font-size: 18px;
+  max-height: 30vh;
+  overflow: auto;
+}
+
+.diary-row::-webkit-scrollbar {
+  display: none;
+}
+
+.diary-row:hover {
+  transition: 0.6s;
+  transform: translateY(-0.15em);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.diary-row-header {
+  color: #3b1d0c;
+  font-weight: 600;
+}
+
+.delete {
+  font-size: 22px;
+}
+
+.diary-date-input {
+  font-size: 15px;
+  width: 70%;
+  border: 1px solid #ae7353;
+  color: #757575;
+  border-radius: 5px;
+}
+
+.input-mood-select {
+  font-size: 15px;
+  border: 1px solid #ae7353;
+  color: #757575;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-family: "Kalam", cursive;
+}
+
+.diary-item-box {
+  font-family: "Josefin Sans", sans-serif;
+  padding-top: 30px;
+  color: #6a391b;
+  overflow: auto;
+}
+
+.pagination-number,
+.pagination-arrow {
+  cursor: pointer;
+  padding: 30px 10px;
+}
+
+.pagination {
+  padding-top: 30px;
+}
+
+.pagination .active {
+  color: #9d5325;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1200px) {
+  .grid-container {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+
+  .diary-content-container {
+    margin: 3% 10%;
+    display: flex;
+    margin: 0 -200px;
+    width: 90vw;
+    background-size: 100vw;
+    background-position: bottom;
+  }
+
+  .diary-app {
+    width: 80vw;
+  }
+
+  .diary-text {
+    width: 70%;
+    padding: 60px 0;
+  }
+}
